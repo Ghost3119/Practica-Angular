@@ -1,18 +1,18 @@
-body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: radial-gradient(circle at top left, #1e293b, #0f172a);
-  font-family: Inter, sans-serif;
-  color: #f1f5f9;
-  overflow: hidden;
+/* Evitar estilos globales: no usar 'body' aquí.
+   En su lugar, scope al host o a un contenedor local. */
+
+:host {
+  display: block;
 }
 
 .container {
   text-align: center;
   animation: fadeIn 2s ease forwards;
+  /* Aplicar aquí el fondo antes global */
+  background: radial-gradient(circle at top left, #1e293b, #0f172a);
+  color: #f1f5f9;
+  border-radius: 16px;
+  padding: 2rem;
 }
 
 h1 {

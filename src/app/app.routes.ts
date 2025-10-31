@@ -22,5 +22,15 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./components/juan/juan.component').then((m) => m.JuanComponent),
   },
+  {
+    path: 'juliette',
+    loadComponent: () =>
+      import('./components/juliette/juliette.component').then((m) => m.JulietteComponent),
+  },
+  {
+    path: 'nadia',
+    loadComponent: () =>
+      import('./nadia/nadia.component').then((m) => m.Nadia),
+  },
   { path: '**', redirectTo: 'home' },
 ];

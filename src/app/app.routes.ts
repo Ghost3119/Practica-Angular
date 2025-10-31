@@ -9,6 +9,7 @@ export const routes: Routes = [
       import('./components/jorge-componente/jorge-componente').then((m) => m.JorgeComponente),
   },
   {
+  },{
     path: 'angel',
     loadComponent: () =>
       import('./components/angel/angel').then((m) => m.Angel),
@@ -17,6 +18,11 @@ export const routes: Routes = [
     path: 'ivan',
     loadComponent: () =>
       import('./components/ivan/ivan.component').then((m) => m.IvanComponent),
+  },
+  {
+    path: 'juliette',
+    loadComponent: () =>
+      import('./components/juliette/juliette.component').then((m) => m.JulietteComponent),
   },
   { path: '**', redirectTo: 'home' },
 ];

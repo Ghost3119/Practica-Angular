@@ -11,4 +11,8 @@
   "include": [
     "src/**/*.ts"
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e825360 (mi segundo commit)

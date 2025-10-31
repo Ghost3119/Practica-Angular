@@ -16,7 +16,21 @@ export const routes: Routes = [
   {
     path: 'ivan',
     loadComponent: () =>
-      import('./components/ivan/ivan.component').then((m) => m.IvanComponent),
+      import('./components/ivan/ivan.component').then((m) => m.IvanComponent),},
+       {
+    path: 'juan',
+    loadComponent: () =>
+      import('./components/juan/juan.component').then((m) => m.JuanComponent),
+  },
+  {
+    path: 'juliette',
+    loadComponent: () =>
+      import('./components/juliette/juliette.component').then((m) => m.JulietteComponent),
+  },
+  {
+    path: 'nadia',
+    loadComponent: () =>
+      import('./nadia/nadia.component').then((m) => m.Nadia),
   },
     {
     path: 'kari',

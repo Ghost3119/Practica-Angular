@@ -26,7 +26,9 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "src/styles.scss"
+            ],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -83,7 +85,9 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.scss"]
+            "styles": [
+              "src/styles.scss"
+            ]
           }
         }
       }
@@ -93,3 +97,4 @@
     "analytics": "1b53b01f-28e5-4fd9-b3cc-a51c4ffc4ba7"
   }
 }
+

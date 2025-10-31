@@ -7,15 +7,22 @@ export const routes: Routes = [
     path: 'jorge',
     loadComponent: () =>
       import('./components/jorge-componente/jorge-componente').then((m) => m.JorgeComponente),
-  },{
+  },
+  {
     path: 'angel',
     loadComponent: () =>
       import('./components/angel/angel').then((m) => m.Angel),
   },
-  { path: '**', redirectTo: 'nadia' },
+  {
+    path: 'ivan',
+    loadComponent: () =>
+      import('./components/ivan/ivan.component').then((m) => m.IvanComponent),
+  },
   {
     path: 'nadia',
     loadComponent: () =>
       import('./nadia/nadia.component').then((m) => m.Nadia),
   },
+
+  { path: '**', redirectTo: 'home' },
 ];

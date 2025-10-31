@@ -18,5 +18,10 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./components/ivan/ivan.component').then((m) => m.IvanComponent),
   },
+    {
+    path: 'kari',
+    loadComponent: () =>
+      import('./components/kari/kari.component').then((m) => m.KariComponent),
+  },
   { path: '**', redirectTo: 'home' },
 ];

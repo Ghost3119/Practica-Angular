@@ -1,0 +1,80 @@
+<main class="main-content">
+  <!-- Presentación arriba -->
+  <section class="presentation">
+    <h1>KARIME</h1>
+    <p>holaa, lo que más me gusta es conocer cafeterías cutes </p>
+   
+  </section>
+
+  <!-- Cards con tu información -->
+  <section class="cards-container">
+    <div class="card">
+      <h2>Información</h2>
+      <p>Desarrollo de software</p>
+    </div>
+    <div class="card">
+      <h2>Hobbies</h2>
+      <p>Me gustan los K-dramas</p>
+    </div>
+    <div class="card">
+      <h2>Pasatiempos</h2>
+      <p>Conocer cafeterías</p>
+    </div>
+  </section>
+
+  <!-- Contenido de rutas dinámico -->
+  <router-outlet></router-outlet>
+</main>
+
+<style>
+  .presentation {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .presentation h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #6a0dad; /* morado bonito */
+  }
+
+  .presentation p {
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+  }
+
+  .cards-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  }
+
+  .card h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #6a0dad;
+    font-size: 1.4rem;
+  }
+
+  .card p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+  }
+</style>

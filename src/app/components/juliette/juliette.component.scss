@@ -1,0 +1,45 @@
+:host {
+  display: block;
+  padding: 40px 0;
+}
+
+.card {
+  background: linear-gradient(135deg, #7f00ff, #e100ff);
+  color: white;
+  text-align: center;
+  padding: 60px;
+  border-radius: 25px;
+  width: 70%;
+  margin: 50px auto;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card h1 {
+  font-size: 3rem;
+  color: cyan;
+  margin: 20px 0;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+}
+
+.card .sub {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.card h3 {
+  margin-top: 40px;
+  color: cyan;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.skills li {
+  margin: 8px 0;
+}

@@ -9,7 +9,6 @@ export const routes: Routes = [
       import('./components/jorge-componente/jorge-componente').then((m) => m.JorgeComponente),
   },
   {
-  },{
     path: 'angel',
     loadComponent: () =>
       import('./components/angel/angel').then((m) => m.Angel),

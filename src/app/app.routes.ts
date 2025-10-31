@@ -24,10 +24,10 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./components/juliette/juliette.component').then((m) => m.JulietteComponent),
   },
+  {
     path: 'nadia',
     loadComponent: () =>
       import('./nadia/nadia.component').then((m) => m.Nadia),
   },
-
   { path: '**', redirectTo: 'home' },
 ];

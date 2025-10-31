@@ -18,5 +18,11 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./components/ivan/ivan.component').then((m) => m.IvanComponent),
   },
+  {
+    path: 'nadia',
+    loadComponent: () =>
+      import('./nadia/nadia.component').then((m) => m.Nadia),
+  },
+
   { path: '**', redirectTo: 'home' },
 ];

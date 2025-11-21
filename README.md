@@ -10,6 +10,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 - Karime Monserrath Tacuba Montejo
 - Roberto Iván Pérez Calderón
 - Juan Gerardo Galindo Pineda
+- Jorge Jair Camacho Ibarra
 
 ## 🐳 Ejecutar con Docker (Recomendado)
 

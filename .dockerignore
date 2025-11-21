@@ -1,0 +1,11 @@
+node_modules
+dist
+.git
+.gitignore
+*.md
+.angular
+.vscode
+.editorconfig
+docker-compose.yml
+Dockerfile
+.dockerignore

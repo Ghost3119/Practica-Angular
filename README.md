@@ -1,59 +1,65 @@
-# AppAngular
+# AppAngular - Los Rompe Códigos
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.4.
 
-## Development server
+## 👥 Integrantes del Equipo
 
-To start a local development server, run:
+- Angel Mauricio Plata Rodríguez
+- Nadia Paola García Palomino
+- Juliette Ramírez Guzmán
+- Karime Monserrath Tacuba Montejo
+- Roberto Iván Pérez Calderón
+- Juan Gerardo Galindo Pineda
+
+## 🐳 Ejecutar con Docker (Recomendado)
+
+### Prerequisitos
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) instalado y ejecutándose
+
+### Levantar el proyecto
+
+Para construir y ejecutar el contenedor:
+
+```bash
+docker-compose up --build
+```
+
+Una vez que el contenedor esté ejecutándose, abre tu navegador en `http://localhost:4200/`
+
+### Detener el contenedor
+
+```bash
+docker-compose down
+```
+
+### Ver logs del contenedor
+
+```bash
+docker-compose logs -f
+```
+
+## 💻 Development server (Sin Docker)
+
+Para iniciar un servidor de desarrollo local sin Docker, ejecuta:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Una vez que el servidor esté corriendo, abre tu navegador en `http://localhost:4200/`. La aplicación se recargará automáticamente cuando modifiques los archivos fuente.
 
-## Code scaffolding
+## 🐋 Docker Configuration
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Este proyecto incluye configuración completa de Docker con las siguientes características:
 
-```bash
-ng generate component component-name
-```
+- **Multi-stage build**: Compilación con Node.js 20 y servicio con Nginx Alpine
+- **Optimización**: Imagen ligera y optimizada para producción
+- **Puerto**: 4200 (host) → 80 (contenedor)
+- **Auto-restart**: El contenedor se reinicia automáticamente
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Archivos Docker
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- `Dockerfile` - Configuración de la imagen
+- `docker-compose.yml` - Orquestación del contenedor
+- `nginx.conf` - Configuración del servidor web
+- `.dockerignore` - Archivos excluidos del build
